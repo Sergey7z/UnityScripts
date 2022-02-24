@@ -18,13 +18,6 @@ public class Rotate : MonoBehaviour {
         transform.RotateAround (new Vector3(positionX, positionY, positionZ),
                                 new Vector3(aroundX, aroundY, aroundZ),
                                 rotationSpeed * Time.deltaTime);
-
-        // Это не обязательно, можно удалить
-        if (aroundX > 1) aroundX = 1;
-        if (aroundX < -1) aroundX = -1;
-        if (aroundY > 1) aroundY = 1;
-        if (aroundY < -1) aroundY = -1;
-        if (aroundZ > 1) aroundZ = 1;
-        if (aroundZ < -1) aroundZ = -1;
+        
     }
 }
