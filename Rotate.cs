@@ -16,7 +16,7 @@ public class Rotate : MonoBehaviour {
         positionZ = gameObject.transform.position.z;
     
         transform.RotateAround (new Vector3(positionX, positionY, positionZ),
-                                new Vector3(-1 * aroundZ, aroundY, aroundX),
+                                new Vector3(aroundX, aroundY, aroundZ),
                                 rotationSpeed * Time.deltaTime);
 
         if (aroundX > 1) aroundX = 1;
